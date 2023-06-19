@@ -6,11 +6,14 @@
     <title>Document</title>
     <!-- 공통 css -->
     <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/font.css">
 
     <!-- 페이지별 css -->
     <link rel="stylesheet" href="/css/main-banner.css">
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/board-latest-img.css">
+    <link rel="stylesheet" href="/css/board-latest-text.css">
 </head>
 <body>
     <!-- 공통영역 네브 -->
@@ -30,10 +33,10 @@
                     </div>
                 </div>
             </div>
-            
         </section>
     </div>
 
+    <!-- 레이아웃 A -->
     <div class="wrapper">
         <section class="layout" data-type="a" data-css="layout">
             <div class="layout__box">
@@ -52,25 +55,25 @@
                 <div class="layout__item">
                     <img src="./image/layout-1.jpg" alt="">
                     <div class="img__title">
-                        <span></span>
+                        <span>병원소개</span>
                     </div>
                 </div>
                 <div class="layout__item">
-                    <img src="./image/layout-1.jpg" alt="">
+                    <img src="./image/layout-2.jpg" alt="">
                     <div class="img__title">
-                        <span></span>
+                        <span>의료진 소개</span>
                     </div>
                 </div>
                 <div class="layout__item">
-                    <img src="./image/layout-1.jpg" alt="">
+                    <img src="./image/layout-3.jpg" alt="">
                     <div class="img__title">
-                        <span></span>
+                        <span>병동 소개</span>
                     </div>
                 </div>
                 <div class="layout__item">
-                    <img src="./image/layout-1.jpg" alt="">
+                    <img src="./image/layout-4.jpg" alt="">
                     <div class="img__title">
-                        <span></span>
+                        <span>지점 현황</span>
                     </div>
                 </div>
                 <div class="layout__item text__item">
@@ -80,15 +83,104 @@
                     </div>
                 </div>
                 <div class="layout__item">
-                    <img src="./image/layout-1.jpg" alt="">
+                    <img src="./image/layout-5.jpg" alt="">
                     <div class="img__title">
-                        <span></span>
+                        <span>오시는 길</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 이미지 위주 게시판 - 최신글-->
+    <div class="wrapper">
+        <section class="board-latest-img" data-type="a" data-css="board-latest-img">
+            <div class="board__box">
+                <div class="title__box">
+                    <div class="title">
+                        <span>Event</span>
+                    </div>
+                    <a href="" class="link">
+                        <span>이벤트 전체보기</span>
+                        <div class="arrow">
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="list__box">
+                    <div class="item">
+                        <div class="img">
+                            <img src="./image/event-1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="title">5월 진행 이벤트</span>
+                            <span class="date">2023.05.01</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="./image/event-2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="title">5월 진행 이벤트</span>
+                            <span class="date">2023.05.01</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img">
+                            <img src="./image/event-3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="title">5월 진행 이벤트</span>
+                            <span class="date">2023.05.01</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
     
+    <!-- 텍스트 위주 게시판 - 최신글 -->
+    <div class="wrapper">
+        <section class="board-latest-text" data-type="a" data-css="board-latest-text">
+            <div class="board__box">
+                <div class="right">
+                    <div class="title__box">
+                        <span class="deco">notice</span>
+                        <p class="title">
+                            <span>자상한방의원의 새로운 소식을</span>
+                            <span>전해드립니다.</span>
+                        </p>
+                    </div>
+                    <div class="table__box">
+                        <a href="" class="row">
+                            <span class="date">2023-05-31</span>
+                            <span class="title">백혈구감소증 환자를 위해서 개발한 제품</span>
+                        </a>
+                        <a href="" class="row">
+                            <span class="date">2023-04-24</span>
+                            <span class="title">이제, 고용량 비타민C주사를 더 효과적으로 안전하게!</span>
+                        </a>
+                        <a href="" class="row">
+                            <span class="date">2023-04-24</span>
+                            <span class="title">연휴 휴진</span>
+                        </a>
+                        <a href="" class="row">
+                            <span class="date">2023-03-28</span>
+                            <span class="title">코로노 19 대비 병원 방역</span>
+                        </a>
+                        <a href="" class="row">
+                            <span class="date">2023-03-08</span>
+                            <span class="title">3월 교육 일정 안내</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="img"></div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- 공통영역 푸터 -->
     <div class="include-file" data-include-path="/footer.html"></div>

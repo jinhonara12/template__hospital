@@ -10,7 +10,6 @@ section.main-banner .background{
     height: 100%;
     width: 100%;
     overflow: hidden;
-    border-radius: 15px;
 }
 section.main-banner .background::after{
     content: "";
@@ -22,7 +21,7 @@ section.main-banner .background::after{
     background-color: rgba(0 0 0 / 50%);
 }
 section.main-banner[data-type="a"] .background{
-    background: url(../image/main-banner-1.jpg) center / cover no-repeat;
+    background: url(../image/main-banner-1.jpg) center / cover no-repeat fixed;
 }
 section.main-banner .text__box{
     display: flex;
@@ -46,6 +45,7 @@ section.main-banner .text__box .text span{
 section.main-banner .text__box .title span{
     font-size: 60px;
     font-weight: 700;
+    font-family: 'noto serif kr';
 }
 section.main-banner .text__box .text span{
     font-size: 20px;

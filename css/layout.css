@@ -11,6 +11,18 @@ section.layout[data-type="a"] .layout__box{
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    position: relative;
+    z-index: 0;
+}
+section.layout[data-type="a"] .layout__box::before{
+    content: "";
+    background: url(../image/layout-1-background-2.png) center no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 section.layout[data-type="a"] .layout__box .layout__item{
     width: calc(calc(100% / 4) - 25px);
@@ -43,12 +55,13 @@ section.layout[data-type="a"] .layout__box .title__item .deco span{
 section.layout[data-type="a"] .layout__box .title__item .title span{
     font-size: 46px;
     font-weight: 700;
-    line-height: 1.2
+    line-height: 1.3
 }
 section.layout[data-type="a"] .layout__box .title__item .button a{
     padding: 10px 30px;
     color: #aaa;
     font-family: roboto;
+    font-size: 14px;
     border: 1px solid #aaa;
 }
 section.layout[data-type="a"] .layout__box .text__item{
@@ -58,7 +71,7 @@ section.layout[data-type="a"] .layout__box .text__item{
 section.layout[data-type="a"] .layout__box .text__item .text{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
 }
 section.layout[data-type="a"] .layout__box .text__item .text span{
     font-size: 28px;
@@ -68,7 +81,25 @@ section.layout[data-type="a"] .layout__box .layout__item{
     display: flex;
     border-radius: 15px;
     overflow: hidden;
+    position: relative;
 }
 section.layout[data-type="a"] .layout__box .layout__item img{
     width: 100%;
+}
+
+section.layout[data-type="a"] .layout__box .layout__item .img__title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    background-color: rgba(0 0 0 / 30%);
+}
+section.layout[data-type="a"] .layout__box .layout__item .img__title span{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
 }
