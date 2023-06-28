@@ -1,6 +1,5 @@
-window.addEventListener('load', function () {
+window.addEventListener('DOMContentLoaded', function () {
     var allElements = document.querySelectorAll('.include-file');
-    console.log(allElements)
     Array.prototype.forEach.call(allElements, function (el) {
         let includePath = el.dataset.includePath;
         if (includePath) {
