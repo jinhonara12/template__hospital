@@ -45,7 +45,7 @@ nav .logo__box .img img{
     height: fit-content;
 }
 nav .logo__box .img .logo__text{
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: bold;
     line-height: 1.1;
     font-family: 'noto serif kr';
@@ -60,7 +60,7 @@ nav .menu__box .menu{
     position: relative;
 }
 nav .menu__box .link{
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 500;
     color: #444;
@@ -80,7 +80,7 @@ header.active nav .menu__box .sub__menu{
     display: flex;
 }
 nav .menu__box .sub__menu .link{
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 400;
     transition: .2s;
     position: relative;
@@ -171,7 +171,7 @@ nav .mobile__box .mobile__menu .m__logo img{
     filter: invert();
 }
 nav .mobile__box .mobile__menu .m__logo span{
-    font-size: 35px;
+    font-size: 3.5rem;
     font-weight: bold;
     line-height: 1.1;
     font-family: 'noto serif kr';
@@ -183,6 +183,7 @@ nav .mobile__box .mobile__menu .m__menu__list{
     flex-wrap: wrap;
     gap: 50px;
     row-gap: 15px;
+    padding: 15px;
 }
 nav .mobile__box .mobile__menu .m__menu__list .m__menu{
     display: flex;
@@ -190,7 +191,7 @@ nav .mobile__box .mobile__menu .m__menu__list .m__menu{
     gap: 20px;
 }
 nav .mobile__box .mobile__menu .m__menu__list .m__main__link{
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 500;
     color: #fff;
 }
@@ -200,7 +201,7 @@ nav .mobile__box .mobile__menu .m__menu__list .m__sub__list{
     gap: 7px;
 }
 nav .mobile__box .mobile__menu .m__menu__list .m__sub__list a{
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 300;
     color: #fff;
     opacity: .5;
@@ -221,7 +222,6 @@ footer .info__box{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
 }
 footer .info__box .left{
     width: 35%;
@@ -239,7 +239,7 @@ footer .info__box .left .text{
     flex-direction: column;
 }
 footer .info__box .left .title span{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 300;
     color: #d8aca9;
     font-family: 'noto serif kr';
@@ -250,17 +250,17 @@ footer .info__box .left .title span.line{
     flex: 1 1 0%;
 }
 footer .info__box .left .text span{
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fafafa;
     font-weight: 300;
 }
 footer .info__box .left .text span.point{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: 'noto serif kr';
     font-weight: 500;
 }
 footer .info__box .left .tel{
-    font-size: 64px;
+    font-size: 6.4rem;
     font-family: 'noto serif kr';
     color: #fafafa;
     font-weight: 500;
@@ -282,7 +282,7 @@ footer .info__box .right .item .type{
     text-align: center;
 }
 footer .info__box .right .item .type span{
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #fff;
     position: relative;
 }
@@ -302,11 +302,11 @@ footer .info__box .right .item .time{
     text-align: center;
 }
 footer .info__box .right .item .time .title{
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #fff;
 }
 footer .info__box .right .item .time .text{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #fff;
 }
 
@@ -339,7 +339,7 @@ footer .info__box .right .item .time .text{
 }
 .footer__box .logo__box .title span{
     color: #A9A9AB;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
     line-height: 1.1;
     font-family: 'noto serif kr';
@@ -352,12 +352,21 @@ footer .info__box .right .item .time .text{
 .footer__box .text__box .address__box,
 .footer__box .text__box .copy__box{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    row-gap: 0px;
 }
 .footer__box .text__box .address__box span,
 .footer__box .text__box .copy__box span{
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #A9A9AB;
+}
+
+
+.footer__box .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .footer__box .extra__info{
     display: flex;
@@ -372,10 +381,9 @@ footer .info__box .right .item .time .text{
 }
 .footer__box .extra__info a{
     color: #A9A9AB;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 .footer__box .sns__box{
-    margin-top: 50px;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -389,3 +397,106 @@ footer .info__box .right .item .time .text{
     height: 25px;
     filter: brightness(0.65);
 }
+
+/*media query*/
+@media all and (max-width: 1440px) {
+    footer .info__box .right{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+    footer .info__box .right .item{
+        flex-direction: row;
+        padding: 10px 20px;
+        gap: 45px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .info__box .right .item .time .text.empty{
+        display: none;
+    }
+}
+@media all and (max-width: 1024px) {
+    nav .menu__box,
+    header::after{
+        display: none;
+    }
+    footer .info__box,
+    footer .footer__box{
+        width: 90%;
+    }
+    footer .info__box .left{
+        width: 50%;
+    }
+
+    nav .mobile__box .mobile__menu{
+        flex-direction: column;
+    }
+
+}
+@media all and (max-width: 767px) {
+    footer .info__box{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer .info__box .left{
+        width: 100%;
+        gap: 15px;
+    }
+    .footer__box{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer__box .right{
+        order: -2;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    .footer__box .sns__box{
+        order: -2;
+    }
+    .footer__box .left{
+        gap: 15px;
+    }
+}
+@media all and (max-width: 479px) {
+    footer{
+        gap: 25px;
+    }
+    nav .mobile__box .mobile__menu{
+        gap: 50px;
+        justify-content: flex-start;
+        padding-top: 100px;
+        box-sizing: border-box;
+    }
+    nav .mobile__box .mobile__menu .m__menu__list{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    nav .mobile__box .mobile__menu .m__menu__list .m__menu{
+        gap: 10px;
+    }
+    nav .mobile__box .mobile__menu .m__menu__list .m__sub__list{
+        display: none;
+    }
+    nav .mobile__box .mobile__menu .m__menu__list .m__menu.active .m__sub__list{
+        display: flex;
+        gap: 0;
+        background-color: #555;
+        border-top: 1px solid #444;
+    }
+    nav .mobile__box .mobile__menu .m__menu__list .m__menu.active .m__sub__list li{
+        display: flex;
+        
+        
+    }
+    nav .mobile__box .mobile__menu .m__menu__list .m__menu.active .m__sub__list li a{
+        border-bottom: 1px solid #444;
+        padding: 7px;
+        width: 100%;
+    }
+}
+
+

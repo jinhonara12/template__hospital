@@ -18,7 +18,7 @@ section.board-latest-img[data-type="a"] .title__box .title{
     display: flex;
 }
 section.board-latest-img[data-type="a"] .title__box .title span{
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     font-family: 'roboto';
 }
@@ -29,7 +29,7 @@ section.board-latest-img[data-type="a"] .title__box .link{
 
 }
 section.board-latest-img[data-type="a"] .title__box .link span{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #8c362f;
 }
 section.board-latest-img[data-type="a"] .title__box .link .arrow{
@@ -49,6 +49,7 @@ section.board-latest-img[data-type="a"] .title__box .link .arrow span{
 }
 section.board-latest-img[data-type="a"] .list__box{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin-top: 70px;
 }
@@ -57,6 +58,7 @@ section.board-latest-img[data-type="a"] .list__box .item{
     flex-direction: column;
     gap: 20px;
     flex: 1 1 0%;
+    cursor: pointer;
 }
 section.board-latest-img[data-type="a"] .list__box .item .img{
     width: 100%;
@@ -74,10 +76,45 @@ section.board-latest-img[data-type="a"] .list__box .item .info{
     gap: 25px;
 }
 section.board-latest-img[data-type="a"] .list__box .item .info .title{
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
 }
 section.board-latest-img[data-type="a"] .list__box .item .info .date{
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #888;
+}
+
+/*media query*/
+@media all and (max-width: 1440px) {
+    section.board-latest-img[data-type="a"] .board__box{
+        max-width: 80%;
+    }
+}
+@media all and (max-width: 1024px) {
+    section.board-latest-img[data-type="a"] .board__box{
+        max-width: 90%;
+    }
+}
+@media all and (max-width: 767px) {
+    section.board-latest-img[data-type="a"] .list__box .item{
+        flex: none;
+        width: calc(50% - 15px);
+    }   
+    section.board-latest-img[data-type="a"] .board__box{
+        padding: 50px 0;
+    }
+
+}
+@media all and (max-width: 479px) {
+    section.board-latest-img[data-type="a"] .title__box .title span{
+        font-size: 3.0rem;
+    }
+    section.board-latest-img[data-type="a"] .title__box .link{
+        gap: 10px;
+    }
+    section.board-latest-img[data-type="a"] .title__box .link .arrow{
+        width: 15px;
+        height: 15px;
+        padding: 10px;
+    }
 }
