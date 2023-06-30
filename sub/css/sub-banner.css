@@ -1,0 +1,25 @@
+section.sub-banner[data-type="a"]{
+    margin-top: 70px;
+}
+section.sub-banner[data-type="a"] .title__box{
+    padding: 150px 0 100px;
+    display: flex;
+}
+section.sub-banner[data-type="a"] .title__box span{
+    font-size: 7rem;
+    font-weight: 700;
+    padding-left: 5%;
+}
+section.sub-banner[data-type="a"] .img__box{
+    background: url(../../image/sub-banner-1.jpg) center / cover no-repeat;
+    padding: 200px 5%;
+}
+section.sub-banner[data-type="a"] .img__box .text{
+    display: flex;
+    flex-direction: column;
+}
+section.sub-banner[data-type="a"] .img__box .text span{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+}  

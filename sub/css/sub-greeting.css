@@ -1,0 +1,53 @@
+section.sub-greeting[data-type="a"]{
+    padding-top: 100px;
+    background-color: #efefef;
+}
+section.sub-greeting[data-type="a"] .greeting__box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+section.sub-greeting[data-type="a"] .deco__box{
+
+}
+section.sub-greeting[data-type="a"] .content__box{
+    display: flex;
+    gap: 50px;
+}
+section.sub-greeting[data-type="a"] .content__box .img__box{
+    display: flex;
+}
+section.sub-greeting[data-type="a"] .content__box .img__box img{
+    width: 100%;
+}
+section.sub-greeting[data-type="a"] .content__box .text__box{
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+section.sub-greeting[data-type="a"] .content__box .text__box .title{
+
+}
+section.sub-greeting[data-type="a"] .content__box .text__box .title span{
+    white-space: pre-line;
+    font-size: 3.5rem;
+    line-height: 1.3;
+    font-weight: 500;
+}
+section.sub-greeting[data-type="a"] .content__box .text__box .text{
+
+}
+section.sub-greeting[data-type="a"] .content__box .text__box .text span{
+    font-size: 1.8rem;
+    white-space: pre-line;
+    font-weight: 300;
+}
+section.sub-greeting[data-type="a"] .content__box .text__box .name{
+
+}
+section.sub-greeting[data-type="a"] .content__box .text__box .name span{
+    font-size: 2rem;
+}
