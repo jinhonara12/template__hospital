@@ -1,0 +1,93 @@
+section.sub-history-layout[data-type="a"] {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+section.sub-history-layout[data-type="a"] .item__box {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+section.sub-history-layout[data-type="a"] .title__box {
+    display: flex;
+}
+
+section.sub-history-layout[data-type="a"] .title__box span {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+section.sub-history-layout[data-type="a"] .history__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box {
+    display: flex;
+    gap: 50px;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .year {
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .year span {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .div {
+    display: flex;
+    justify-content: center;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .div span {
+    width: 1px;
+    height: 100%;
+    background-color: #111;
+    position: relative;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .div span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #111;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .month {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .month .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .month .item span {
+    font-size: 2rem;
+    word-break: keep-all;
+}
+
+section.sub-history-layout[data-type="a"] .history__box .year__box .month .item span.num {
+    font-size: 2.2rem;
+    font-weight: 700;
+
+}
