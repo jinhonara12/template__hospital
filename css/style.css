@@ -41,11 +41,12 @@ nav {
 
 nav .logo__box {
     opacity: .8;
+    display: f;
 }
 
 nav .logo__box .img {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 5px;
 }
 
